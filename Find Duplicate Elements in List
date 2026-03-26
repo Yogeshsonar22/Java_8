@@ -1,0 +1,23 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+import java.util.List;
+import java.util.Set;
+
+class Codechef
+{
+    public static void main(String[] args) throws java.lang.Exception
+    {
+        // your code goes here
+        List < String > list = Arrays.asList("Yogesh", "sonar", "yogesh", "sOnAR", "Ajay");
+
+        Set < String > set = new HashSet < >();
+        
+        list.stream()   .map(String::toLowerCase) .filter(x -> !set.add(x)).forEach(System.out::println);
+
+
+    }
+}
+// Your Output
+// yogesh
+// sonar
