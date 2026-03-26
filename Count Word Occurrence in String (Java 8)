@@ -1,0 +1,22 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+import java.util.stream.Collectors;
+import java.util.function.Function;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+//your code goes here
+String str="this is my first code This for code practice";
+
+Map<String, Long> map= Arrays.stream(str.split(" ")).collect(Collectors.groupingBy(x->x.toLowerCase() ,Collectors.counting()));
+
+System.out.println(map);
+	}
+}
+
+//Or insted of using x-> x we also use --> Function.identity()  for same Output
+//Your Output
+//{practice=1, code=2, for=1, this=2, is=1, my=1, first=1}
