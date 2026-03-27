@@ -1,0 +1,70 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+import java.util.stream.Collectors;
+
+
+//sum 
+//acending naturalOrder
+//decending order 
+//even, odd 
+//min, max
+//find dublicate , revove dublicate
+//Convert List to Map, to set, to list, to new collections
+//Join strings
+//find first, or 1st limit(3), 1st skip(3), 2nd element, highest 2nd,
+//partition even & odd
+//SummingInt
+//avg 
+//Group by string length
+//count the dublicate 
+//Flatten list of lists -> flatMap
+//
+
+class Codechef
+{
+    public static void main(String[] args) throws java.lang.Exception
+    {
+        System.out.print("Even number: ");
+        List < Integer > list = Arrays.asList(7, 5, 3, 2, 3, 4, 5, 6, 7, 8);
+        list.stream().filter(n -> n % 2 == 0).forEach(n -> System.out.print(n + " "));
+        long Count = list.stream().filter(n -> n % 2 == 0).count();
+        System.out.println("Count: " + Count);
+        System.out.print("Odd number: ");
+        list.stream().filter(n -> n % 2 != 0).forEach(n -> System.out.print(n + " "));
+        long count = list.stream().filter(n -> n % 2 != 0).distinct().count();
+        System.out.println("Count: " + count);
+
+        System.out.print("Sum: ");
+        int sum = list.stream().mapToInt(Integer::intValue).sum();
+        System.out.println(sum);
+
+        int max = list.stream().min(Comparator.naturalOrder()).get();
+        System.out.println("MAx: " + max);
+        System.out.print("rev Sorted list: ");
+        list.stream().sorted(Collections.reverseOrder()).distinct().forEach(n -> System.out.print(n + " "));
+        System.out.println();
+        System.out.print("Dublicate number: ");
+        Set < Integer > set = new HashSet < > ();
+        list.stream().filter(n -> !set.add(n)).forEach(n -> System.out.print(n + " "));
+        System.out.println();
+        System.out.print("First number: ");
+        list.stream().findFirst().ifPresent(System.out::println);
+
+        int second = list.stream().sorted((a, b) -> b - a).skip(1).findFirst().get();
+        System.out.println("Second last number: " + second);
+
+        System.out.print("partition by Even and odd: ");
+        Map < Boolean, List < Integer >> map = list.stream().collect(Collectors.partitioningBy(n -> n % 2 == 0));
+        System.out.println(map);
+
+        List < String > list3 = Arrays.asList("raj", "sai", "yogesh", "sonar");
+        System.out.print("Group by length: ");
+        Map < Integer, List < String >> map4 = list3.stream().collect(Collectors.groupingBy(String::length));
+        System.out.println(map4);
+
+
+
+
+    }
+}
