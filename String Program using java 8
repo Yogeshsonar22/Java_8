@@ -1,0 +1,74 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+import java.util.stream.Collectors;
+
+//Count occurrence of each character
+// find dublicate Character in string
+//Count words in string -> "java is good" -> 3 word 
+//Count the word Occurance -> " java is good but java is hard"   -> {but=1, =1, java=2, is=2, hard=1, good=1}
+//count the character in words -> "java is good"=> 4-> [java,good], 2->[is]
+
+
+
+
+//----------------need to more practice-------------------------
+//Count vowels
+//Find longest word -> max(Comparator.comparing(String::length)).get()
+//First non-repeating character
+
+class Codechef
+{
+    public static void main(String[] args) throws java.lang.Exception
+    {
+        String str = "Programming";
+
+        //     Map < Character, Long > map = str.chars()
+        //         .mapToObj(c -> (char) c)
+        //         .map(Character::toLowerCase) // ⭐ important line
+        //         .collect(Collectors.groupingBy(c -> c, Collectors.counting()));
+
+        //     System.out.println(map);
+
+        //  ⭐    // find dublicate Character in string
+        //     Set<Character>set = new HashSet<>();
+        //     str.chars().mapToObj(c-> (char) c).filter(c-> !set.add(c)).forEach(c-> System.out.print(c+" "));
+
+
+        //     System.out.println("");
+        //  ⭐    //Count vowels
+        //     str.chars().mapToObj(c-> (char)c).filter(c-> "aeiou".contains(String.valueOf(c))).forEach(n-> System.out.print(n+ " "));
+
+
+        //⭐ reverse string -----------------------
+        //StringBuilder sb = new StringBuilder(str);
+        //String reverse= sb.reverse().toString();
+        // System.out.println(reverse);
+
+        //⭐ Palindrome string-------------------------& reverse string
+        //  StringBuilder sb2 = new StringBuilder(str);
+        //  Boolean palindrome = str.equals(sb2.reverse().toString());
+        //  System.out.println(palindrome);
+
+
+        ////⭐ count the word Occurance or frequesncy--------------------
+        String str2 = " java is good but java language is hard";
+        Map < String, Long > map4 = Arrays.stream(str2.split(" ")).collect(Collectors.groupingBy(s -> s, Collectors.counting()));
+        System.out.println(map4);
+
+        //⭐ Count words in string -> "java is good" -> 3 word 
+        //   Long count =  str.chars().mapToObj(c-> (char)c).filter(c-> "aeiou".contains(String.valueOf(c))).count();
+        //     System.out.println("Count: "+count);
+        
+        //⭐ count the character in words -> "java is good"=> 4-> [java,good], 2->[is]
+        
+        String str3 = "java is good language is";
+        
+
+        //Find longest word ⭐ important 
+        String longest = Arrays.stream(str2.split(" ")).max(Comparator.comparing(String::length)).get();
+        long longestCount = longest.length();
+        System.out.println("Longest: " + longest + " Count: " + longestCount);
+
+    }
+}
