@@ -5,6 +5,7 @@ import java.util.stream.Collectors;
 
 
 //sum 
+//count
 //acending naturalOrder
 //decending order 
 //even, odd 
