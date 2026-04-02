@@ -1,0 +1,24 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+import java.util.stream.Collectors;
+//Count occurrences of each character
+//Count characters in a String
+//Count words in a String
+
+//if interviewer asked “count total” 👉 Use .count()
+//if asked “occurrence / frequency” 👉 Use groupingBy + counting()
+class Codechef
+{
+    public static void main(String[] args) throws java.lang.Exception
+    {
+        String str = "prograMming";
+        Map < Character, Long > map = str.chars().mapToObj(c -> (char) c).collect(Collectors.groupingBy(c -> c, Collectors.counting()));
+        System.out.println(map);
+        
+        //count character in String
+        
+        Long count=str.chars().mapToObj(c->(char)c).count();
+System.out.println("count of character: "+ count);
+    }
+}
