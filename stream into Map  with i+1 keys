@@ -1,0 +1,22 @@
+import java.util.*;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+        List<Integer> list = Arrays.asList(2,3,4,3,12,32,4,3,54,46,6);
+
+        // Use IntStream.range to track indices instead of an external counter
+        Map<Integer, Integer> map = IntStream.range(0, list.size())
+            .boxed()
+            .collect(Collectors.toMap(
+                i -> i,
+                i -> list.get(i) * list.get(i),
+                (oldValue, newValue) -> newValue
+            ));
+	       
+	    System.out.println(map);
+	}
+}
