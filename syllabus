@@ -1,0 +1,133 @@
+📘
+Java 8 Full Menu / Syllabus
+    Module 1: Introduction to Java 8
+    Why Java 8 was introduced
+    Features of Java 8 overview
+    Difference between Java 7 and Java 8
+    Functional Programming concept
+
+
+Module 2: Lambda Expressions
+    What is Lambda Expression
+    Syntax of Lambda
+    Functional Interface with Lambda
+    Lambda with parameters
+    Lambda with
+    return type
+    Lambda vs Anonymous Class
+    Real - time examples of Lambda
+
+
+Module 3: Functional Interfaces
+    What is Functional Interface
+    @FunctionalInterface annotation
+    Built - in Functional Interfaces
+    Predicate
+    Function
+    Consumer
+    Supplier
+    BiPredicate / BiFunction / BiConsumer
+    UnaryOperator / BinaryOperator
+
+
+Module 4: Method Reference
+    What is Method Reference
+    Types of Method Reference
+    Static method reference
+    Instance method reference
+    Constructor reference
+
+
+Module 5: Stream API(Very Important)
+    What is Stream API
+    How Stream works
+    Intermediate vs Terminal operations
+    filter()
+    map()
+    flatMap()
+    sorted()
+    distinct()
+    limit()
+    skip()
+    peek()
+    collect()
+    forEach()
+    count()
+    reduce()
+    min() / max()
+    findFirst() / findAny()
+    anyMatch() / allMatch() / noneMatch()
+    Parallel Stream
+    Stream lifecycle
+
+
+Module 6: Collectors Class
+    What is Collectors
+    toList()
+    toSet()
+    toMap()
+    joining()
+    counting()
+    groupingBy()
+    partitioningBy()
+    summingInt()
+    averagingInt()
+    mapping()
+    Custom Collector basics
+
+
+Module 7: Optional Class
+    What is Optional
+    Why Optional introduced
+        of ()
+    ofNullable()
+    empty()
+    isPresent()
+    get()
+    orElse()
+    orElseGet()
+    orElseThrow()
+    ifPresent()
+
+
+Module 8: Default & Static Methods in Interface
+    Default methods in interface
+    Static methods in interface
+    Multiple inheritance conflict resolution
+    
+
+Module 9: Date and Time API
+    Problems with old Date API
+    LocalDate
+    LocalTime
+    LocalDateTime
+    ZonedDateTime
+    Period
+    Duration
+    DateTimeFormatter
+
+
+Module 10: Nashorn JavaScript Engine
+    Introduction to Nashorn
+    Execute JavaScript in Java
+    
+
+Module 11: Concurrency Enhancements
+    CompletableFuture basics
+    Parallel Arrays
+    New concurrency utilities
+    
+
+Module 12: Java 8 Interview Topics
+    Why Stream is lazy
+    Difference: Collection vs Stream
+    Difference: map vs flatMap
+    Difference: Predicate vs Function
+    Difference: orElse vs orElseGet
+    Why Optional used
+    Lambda internal working📌 Recommended Learning Order
+
+
+Learn in this order:
+
+     Introduction→ Lambda→ Functional Interface→ Method Reference→ Stream API→ Collectors→ Optional→ Default Methods→ Date Time API→ Interview Questions
