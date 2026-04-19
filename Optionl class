@@ -1,0 +1,36 @@
+import java.util.Optional;
+
+public class Main {
+    public static void main(String[] args) {
+      // use ony one 1 or 2 or 3 as per requirement: 
+
+        // 1. of() -> value must not be null
+        Optional<String> op1 = Optional.of("Yogesh");
+
+        // 2. empty() -> no value
+        Optional<String> op2 = Optional.empty();
+
+        // 3. ofNullable() -> null allowed
+        Optional<String> op3 = Optional.ofNullable(null);
+
+        // -----------------------------------
+        // isPresent()
+        System.out.println("isPresent: " + op1.isPresent());
+
+        // get()
+        System.out.println("get: " + op1.get());
+
+        // orElse()
+        System.out.println("orElse: " + op3.orElse("Default Name"));
+
+        // ifPresent()
+        op1.ifPresent(name -> System.out.println("ifPresent: " + name));
+
+        // orElseThrow()
+        System.out.println("orElseThrow: " + op1.orElseThrow());
+
+        // -----------------------------------
+        // empty optional example
+        System.out.println("Empty value: " + op2.orElse("No Data"));
+    }
+}
