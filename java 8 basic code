@@ -10,6 +10,7 @@ import java.util.stream.Collectors;
 //decending order 
 //even, odd 
 //min, max
+//reduce and peek() use
 //find dublicate , revove dublicate
 //Convert List to Map, to set, to list, to new collections
 //Join strings
@@ -20,8 +21,22 @@ import java.util.stream.Collectors;
 //Group by string length
 //count the dublicate 
 //Flatten list of lists -> flatMap
-//
+ 
+// Built - in Functional Interfaces
+    Predicate
+    Function
+    Consumer
+    Supplier
+    BiPredicate ->  2 input one boolean output a.isEqual(b)
+    BiFunction  -> 2 input one same value output return (a, b) -> a+b;
+    BiConsumer  -> 2 input no output return -> ()-> sout(name +" "+ age);
+    UnaryOperator -> same type on single input = same type of single output
+    BinaryOperator  -> same  type on 2 input = same type of single output
+//optional class code 
 
+// Lambda with parameters
+// Lambda real life code example 
+-----------------------------------------------------------------------------------------------
 class Codechef
 {
     public static void main(String[] args) throws java.lang.Exception
