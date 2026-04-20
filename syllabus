@@ -4,6 +4,7 @@ Java 8 Full Menu / Syllabus
     Why Java 8 was introduced
     Features of Java 8 overview
     Difference between Java 7 and Java 8
+    Current version of java
     Functional Programming concept
 
 
@@ -26,8 +27,11 @@ Module 3: Functional Interfaces
     Function
     Consumer
     Supplier
-    BiPredicate / BiFunction / BiConsumer
-    UnaryOperator / BinaryOperator
+    BiPredicate ->  2 input one boolean output a.isEqual(b)
+    BiFunction  -> 2 input one same value output return (a, b) -> a+b;
+    BiConsumer  -> 2 input no output return -> ()-> sout(name +" "+ age);
+    UnaryOperator -> same type on single input = same type of single output
+    BinaryOperator  -> same  type on 2 input = same type of single output
 
 
 Module 4: Method Reference
