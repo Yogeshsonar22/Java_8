@@ -31,6 +31,9 @@ String:
 //Join strings
 //Convert String to Uppercase
 
+Real wod Program asked in the interview:
+//Find the highest salary of the customer
+
 Collectors + Grouping Question: 
 //Count Each Character i.e str = "java"
 //Group by string length
