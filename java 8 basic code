@@ -3,24 +3,39 @@ import java.lang.*;
 import java.io.*;
 import java.util.stream.Collectors;
 
-
-//sum 
+Array: 
+//sum & with Reduce()
 //count
-//acending naturalOrder
-//decending order 
+//ascending naturalOrder
+//descending order 
 //even, odd 
 //min, max
-//reduce and peek() use
-//find dublicate , revove dublicate
-//Convert List to Map, to set, to list, to new collections
-//Join strings
+//reduce() and peek() use
+//find duplicate, remove duplicate
+//Convert List to Map & with(add Inc i++), to set, to list, to new collections
 //find first, or 1st limit(3), 1st skip(3), 2nd element, highest 2nd,
 //partition even & odd
 //SummingInt
 //avg 
+//Flatten list of lists -> flatMap
+
+String:
+//Reverse a String
+//Check Palindrome
+//Find Duplicate Characters //& Duplicate remove it 
+//First Non-Repeated Character
+//Sort String Characters
+//Count Vowels or Consonants
+//Find Longest Word  str = "I love java programming"; -> programming & 
+// find smallwest word   -> I
+//Join strings
+//Convert String to Uppercase
+
+Collectors + Grouping Question: 
+//Count Each Character i.e str = "java"
 //Group by string length
 //count the dublicate 
-//Flatten list of lists -> flatMap
+
  
 // Built - in Functional Interfaces
     Predicate
