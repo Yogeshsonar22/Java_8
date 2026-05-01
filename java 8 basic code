@@ -22,13 +22,15 @@ Array:
 String:
 //Reverse a String
 //Check Palindrome
-//Find Duplicate Characters //& Duplicate remove it 
-//First Non-Repeated Character
+//Find Duplicate Characters + Or  skip the space filter(c->(char)c!=' ') 
+//remove Duplicate
 //Sort String Characters
 //Count Vowels or Consonants
+//Join strings( "  or ","")
+//First Non-Repeated Character//Count Vowels or Consonants
 //Find Longest Word  str = "I love java programming"; -> programming & 
 // find smallwest word   -> I
-//Join strings
+
 //Convert String to Uppercase
 
 Real wod Program asked in the interview:
