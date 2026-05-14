@@ -2,7 +2,7 @@ import java.util.Optional;
 
 public class Main {
     public static void main(String[] args) {
-      // use ony one 1 or 2 or 3 as per requirement: 
+      // use only one 1, 2, or 3 as per requirement: 
 
         // 1. of() -> value must not be null
         Optional<String> op1 = Optional.of("Yogesh");
