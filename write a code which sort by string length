@@ -1,0 +1,22 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+
+        List<String> names = Arrays.asList(
+                "Java",
+                "SpringBoot",
+                "AWS",
+                "Microservices",
+                "API"
+        );
+
+        names.sort(Comparator.comparingInt(String::length));
+
+        System.out.println(names);
+    }
+}
+
+
+===> Output
+[API, AWS, Java, SpringBoot, Microservices]
