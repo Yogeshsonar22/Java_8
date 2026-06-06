@@ -1,0 +1,24 @@
+import java.util.stream.Collectors;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+        
+String str = "swiss";
+
+Character result = str.chars().mapToObj(c -> (char)c).collect(Collectors.groupingBy(
+                c -> c,
+                LinkedHashMap::new,             //for Preserve the inserting swiss order to get 1 value every time 
+                Collectors.counting()))
+        .entrySet()                              //Convert into Entries Key = values
+        .stream()
+        .filter(e -> e.getValue() == 1)           //filter by count of occurance is 1 here W=1 & i=1
+        .map(Map.Entry::getKey)                   // get key only W i
+        .findFirst()                           // W i ---> W  
+        .orElse(null);                         // if empty String ====> null
+
+System.out.println(result);  ====> W
+    
+	}
+}
