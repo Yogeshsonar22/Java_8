@@ -1,0 +1,17 @@
+
+class Main{
+    public static void main(String [] args){
+        String str= "swis";
+        
+        Set<Character> set = new HashSet<>();
+
+Character ch = str.chars()
+        .mapToObj(c -> (char)c)
+        .filter(c -> !set.add(c))
+        .findFirst()
+        .orElse(null);
+      System.out.println(ch);  ---> s
+        
+    }
+    
+}
